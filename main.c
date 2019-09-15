@@ -86,8 +86,6 @@ int main()
     printf("Enter the name of the file:");
     scanf("%s", name);
 
-    realloc(name, sizeof(char) * strlen(name));
-
     if (x == 1) { Encrypt(key, name, text); }
     else if (x == 2) { Decrpyt(key, name, text); }
     else { printf("Bad input!\n"); return -1; }
